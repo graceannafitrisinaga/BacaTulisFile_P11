@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BacaTulis_P11</string>
+    <string name="judul">DIARY</string>
+    <string name="nama_file">Enter File Name</string>
+    <string name="notes">Input Your Feelings</string>
+    <string name="tulis">Write</string>
+    <string name="baca">Read</string>
+    <string name="hapus">Delete</string>
+</resources>
