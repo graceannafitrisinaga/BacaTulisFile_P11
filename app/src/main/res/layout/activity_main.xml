@@ -7,6 +7,9 @@
     android:background="@drawable/cover"
     tools:context=".MainActivity">
 
+    /* Membuat judul halaman aplikasi menggunakan textview dengan menmberikan id textview,
+    menyimpan text judul dalam string, memberikan ukuran, warna, dan style teks
+    */
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -20,6 +23,10 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    /* Membuat nama file dan catatan file menggunakan EditText dengan mengatur warna dan ukuran nama dan isi file yang diinput.
+    digunakan atribut android:autofillHints untuk memberi tahu isi otomatis jenis konten apa yang kita harapkan
+    ketika editText diklik oleh pengguna maka teks yang ada dalam hint tadi akan otomatis terhapus dan diganti dengan nama file dan isi file yang kita input
+    */
     <EditText
         android:id="@+id/editFileName"
         android:layout_width="340dp"
@@ -33,6 +40,7 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textSize="20sp"
+        android:textColor="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -51,10 +59,15 @@
         android:inputType="textLongMessage|textMultiLine"
         android:lines="7"
         android:textSize="18sp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editFileName" />
 
+    /* Membuat tombol write menggunakan Button untuk menyimpan file dengan memberikan id btnWrite
+    memberikan warna button dan warna tulisan button yang disimpan dalam file colors.xml
+    dan nama button disimpan kedalam file strings.xml
+    */
     <Button
         android:id="@+id/btnWrite"
         android:layout_width="wrap_content"
@@ -69,6 +82,10 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent" />
 
+    /* Membuat tombol read menggunakan Button untuk membaca atau menampilkan isi file dengan memberikan id btnRead
+    memberikan warna button dan warna tulisan button yang disimpan dalam file colors.xml
+    dan nama button disimpan kedalam file strings.xml
+    */
     <Button
         android:id="@+id/btnRead"
         android:layout_width="wrap_content"
@@ -81,6 +98,10 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnWrite" />
 
+    /* Membuat tombol delete menggunakan Button untuk menghapus file dengan memberikan id btnDelete
+    memberikan warna button dan warna tulisan button yang disimpan dalam file colors.xml
+    dan nama button disimpan kedalam file strings.xml
+    */
     <Button
         android:id="@+id/btnDelete"
         android:layout_width="wrap_content"
